@@ -15,7 +15,6 @@
 /*start navabar*/
 
 nav {
-    position: absolute;
     z-index: 9999;
     top: 20px;
 }
@@ -140,13 +139,14 @@ a.dropdown-item.dropdown-toggle::after {
 
 /*end navbar*/
 
+
+/*start navbar*/
+
 .landing {
     position: relative;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 80px);
     z-index: 1;
-    width: 100%;
     background-color: var(--secondColor);
-    margin-top: -91px;
     align-items: center;
 }
 
@@ -251,7 +251,6 @@ a.dropdown-item.dropdown-toggle::after {
     }
     .landing {
         height: 100vh;
-        margin-top: -81px;
     }
     .landing .img-cont img {
         height: 270px;
