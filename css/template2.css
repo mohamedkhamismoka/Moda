@@ -17,7 +17,7 @@
 nav {
     position: absolute;
     z-index: 9999;
-    margin-top: 20px;
+    top: 20px;
 }
 
 nav .navbar-brand {
@@ -228,7 +228,7 @@ a.dropdown-item.dropdown-toggle::after {
 
 @media screen and (max-width:992px) {
     nav {
-        margin-top: 10px;
+        top: 10px;
     }
     nav .navbar-nav {
         display: none;
