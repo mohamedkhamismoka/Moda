@@ -251,6 +251,7 @@ a.dropdown-item.dropdown-toggle::after {
     }
     .landing {
         height: 100vh;
+        margin-top: -81px;
     }
     .landing .img-cont img {
         height: 270px;
