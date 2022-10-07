@@ -8,15 +8,13 @@ $("document").ready(function() {
 
     })
 
-    function resetHeight() {
+    $(window).scroll(function() {
+        if (window.pageYOffset > 0) {
+            $("nav").addClass("scroll");
+        } else {
+            $("nav").removeClass("scroll");
+        }
 
-        // reset the body height to that of the inner browser
-        document.body.style.height = window.innerHeight + "px";
-        console.log(document.body.style.height);
+    })
 
-    }
-    // reset the height whenever the window's resized
-    window.addEventListener("resize", resetHeight);
-    // called to initially set the height.
-    resetHeight();
 })
