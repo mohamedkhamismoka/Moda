@@ -185,6 +185,7 @@ a.dropdown-item.dropdown-toggle::after {
 
 .sponsers {
     padding: 10px;
+    background-color: #eee;
 }
 
 .sponsers img {
