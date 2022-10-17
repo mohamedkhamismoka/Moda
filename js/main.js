@@ -8,6 +8,19 @@ $("document").ready(function() {
 
     })
 
+    $("#accordion a").click(function() {
+
+        if ($(this).siblings().find("path ").first().css("opacity") == "1") {
+
+            $(this).siblings().find("path").css("opacity", "1")
+            $(this).siblings().find("path ").first().css("opacity", "0")
+        } else {
+            $(this).siblings().find("path").css("opacity", "0")
+            $(this).siblings().find("path").first().css("opacity", "1")
+        }
+
+    })
+
     $(".to-top").click(function() {
         window.scrollTo(0, 0);
 
@@ -22,6 +35,7 @@ $("document").ready(function() {
         $(this).css("opacity", "0.5")
 
     })
+
     $(window).scroll(function() {
         if (window.pageYOffset > 0) {
             $("nav").addClass("scroll");

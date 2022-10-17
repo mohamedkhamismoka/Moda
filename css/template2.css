@@ -355,6 +355,77 @@ a.dropdown-item.dropdown-toggle::after {
 
 /*end about*/
 
+.whyus {
+    background-color: #f3f5fa;
+    padding: 60px 0;
+}
+
+.whyus-img {
+    background-image: url('../images/why-us.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.whyus #accordion .card span {
+    color: var(--maincolor);
+    font-weight: 600;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.whyus #accordion .card-header {
+    padding: 0px;
+    background-color: white;
+    border: 1px solid transparent;
+    position: relative;
+}
+
+.whyus #accordion .card-header a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.whyus #accordion .card-header svg {
+    position: absolute;
+    color: var(--secondColor);
+    right: 10px;
+    top: 12px
+}
+
+.whyus #accordion .card {
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 10px;
+}
+
+.whyus #accordion .card .up path {
+    opacity: 0;
+}
+
+.whyus-content {
+    color: var(--secondColor);
+}
+
+.whyus-content h3,
+.whyus-content h1,
+.whyus-content p {
+    margin-left: 10px;
+}
+
+.whyus #accordion .card-header p {
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 0;
+}
+
+.whyus #accordion .card-header p:hover {
+    color: var(--maincolor);
+}
+
 
 /*start media query*/
 
@@ -367,6 +438,9 @@ a.dropdown-item.dropdown-toggle::after {
 @media screen and (max-width:500px) {
     .landing .img-cont img {
         height: 280px;
+    }
+    .whyus #accordion .card-header svg {
+        right: 0px;
     }
 }
 
@@ -382,15 +456,6 @@ a.dropdown-item.dropdown-toggle::after {
     }
     .about-us h1::before {
         bottom: -14px;
-    }
-}
-
-@-webkit-keyframes up-down {
-    0% {
-        transform: translateY(10px);
-    }
-    100% {
-        transform: translateY(-10px);
     }
 }
 
@@ -448,6 +513,16 @@ a.dropdown-item.dropdown-toggle::after {
     }
     .about-us .header-2 {
         margin-top: 10px;
+    }
+    .whyus-img {
+        min-height: 400px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .whyus .card-header p {
+        text-align: start;
     }
 }
 
