@@ -13,12 +13,37 @@
 
 body {
     height: 5000px;
+    transition: all 0.3s ease-in-out;
 }
 
 .scroll {
     background-color: rgba(40, 58, 90, 0.9);
     top: 0;
     transition: all 0.3s ease-in-out;
+}
+
+.to-top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 500px;
+    right: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--maincolor);
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+    z-index: 500;
+}
+
+.to-top svg {
+    color: white;
+}
+
+.to-top:hover {
+    opacity: 1;
 }
 
 @keyframes up-down {
@@ -152,18 +177,18 @@ a.dropdown-item.dropdown-toggle::after {
 }
 
 .navbar-toggler span:nth-child(2) {
-    top: 6px;
+    top: 9px;
 }
 
 .navbar-toggler span:nth-child(3) {
-    top: 10px;
+    top: 16px;
 }
 
 
 /*end navbar*/
 
 
-/*start navbar*/
+/*start landing*/
 
 .landing {
     position: relative;
@@ -185,6 +210,11 @@ a.dropdown-item.dropdown-toggle::after {
 
 .landing .btns p {
     color: white;
+    font-size: 18px;
+}
+
+.landing .btns svg {
+    font-size: 18px;
 }
 
 .landing .btns button {
@@ -193,6 +223,7 @@ a.dropdown-item.dropdown-toggle::after {
     border-radius: 50px;
     border-color: transparent;
     color: white;
+    font-size: 18px;
 }
 
 .landing .img-cont img {
@@ -211,7 +242,6 @@ a.dropdown-item.dropdown-toggle::after {
 .landing .text h2 {
     font-size: 24px;
     opacity: 0.6;
-    margin-bottom: 30px;
 }
 
 
@@ -221,7 +251,7 @@ a.dropdown-item.dropdown-toggle::after {
 /*start sponsers*/
 
 .sponsers {
-    padding: 10px;
+    padding: 30px;
     background-color: #eee;
 }
 
@@ -246,6 +276,115 @@ a.dropdown-item.dropdown-toggle::after {
 
 /*end sponsers*/
 
+
+/*start about*/
+
+.about-us {
+    padding: 60px 0;
+    font-size: 17px;
+}
+
+.about-us h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color: var(--secondColor);
+    position: relative;
+}
+
+.about-us h1:after {
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 1px;
+    background-color: lightgray;
+    bottom: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.about-us h1:before {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 4px;
+    background-color: #47b2e4;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-us ul li {
+    margin-bottom: 10px;
+}
+
+.about-us ul svg {
+    color: var(--maincolor);
+    margin-right: 10px;
+}
+
+.about-us button {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 12px 32px;
+    border-radius: 4px;
+    transition: 0.3s;
+    line-height: 1;
+    color: #47b2e4;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    margin-top: 6px;
+    border: 2px solid var(--maincolor);
+    background-color: transparent;
+}
+
+.about-us button:hover {
+    background-color: var(--maincolor);
+    color: white;
+}
+
+
+/*end about*/
+
+
+/*start media query*/
+
+@media screen and (min-width:768px) {
+    .about-us h1::before {
+        bottom: -15px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .landing .img-cont img {
+        height: 280px;
+    }
+}
+
+@media screen and (min-width:501px) {
+    .landing .img-cont img {
+        height: 350px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .landing .img-cont img {
+        height: 480px;
+    }
+    .about-us h1::before {
+        bottom: -14px;
+    }
+}
+
 @-webkit-keyframes up-down {
     0% {
         transform: translateY(10px);
@@ -268,6 +407,7 @@ a.dropdown-item.dropdown-toggle::after {
         padding: 0px 27px 50px;
         background: white;
         width: 100%;
+        border-radius: 40px;
     }
     nav .navbar-nav .nav-item .nav-link {
         color: black;
@@ -306,22 +446,10 @@ a.dropdown-item.dropdown-toggle::after {
         line-height: 24px;
         margin-bottom: 30px;
     }
-}
-
-@media screen and (max-width:500px) {
-    .landing .img-cont img {
-        height: 320px;
+    .about-us .header-2 {
+        margin-top: 10px;
     }
 }
 
-@media screen and (min-width:501px) {
-    .landing .img-cont img {
-        height: 400px;
-    }
-}
 
-@media screen and (min-width:992px) {
-    .landing .img-cont img {
-        height: 500px;
-    }
-}
+/*end media query*/
