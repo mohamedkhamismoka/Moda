@@ -229,6 +229,7 @@ a.dropdown-item.dropdown-toggle::after {
     border-color: transparent;
     color: white;
     font-size: 18px;
+    letter-spacing: 1px;
 }
 
 .landing .img-cont img {
@@ -799,13 +800,6 @@ a.dropdown-item.dropdown-toggle::after {
 
 /*start media query*/
 
-@media screen and (max-width:575px) {
-    .landing .img-cont img {
-        width: 80%;
-        ;
-    }
-}
-
 @media screen and (min-width:768px) {
     .about-us h1::before {
         bottom: -15px;
@@ -903,6 +897,13 @@ a.dropdown-item.dropdown-toggle::after {
         font-size: 18px;
         line-height: 24px;
         margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .landing .img-cont img {
+        width: 80%;
+        ;
     }
 }
 
