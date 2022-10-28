@@ -1077,12 +1077,23 @@ a.dropdown-item.dropdown-toggle::after {
         line-height: 24px;
         margin-bottom: 30px;
     }
+    .pricing .plan-box {
+        max-width: 80%;
+        margin: 0 auto 30px auto;
+    }
 }
 
 @media screen and (max-width:575px) {
     .landing .img-cont img {
         width: 80%;
         ;
+    }
+}
+
+@media (max-width: 420px) {
+    .pricing .plan-box {
+        max-width: 100%;
+        margin: 0 auto 30px auto;
     }
 }
 
