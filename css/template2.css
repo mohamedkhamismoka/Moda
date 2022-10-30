@@ -1087,9 +1087,6 @@ a.dropdown-item.dropdown-toggle::after {
     color: #fff;
     transition: 0.4s;
     border-radius: 50px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .contact .icon:hover {
