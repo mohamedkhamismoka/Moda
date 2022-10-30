@@ -1,10 +1,13 @@
 $("document").ready(function() {
+
     setTimeout(function() {
         $(".preloader").fadeOut(3000, "swing", function() {
             $("body").css("overflow-y", "auto")
         })
 
     }, 3000)
+
+
 
 
     $(".navbar-toggler").click(function() {
