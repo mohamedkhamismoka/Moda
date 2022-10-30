@@ -980,7 +980,7 @@ a.dropdown-item.dropdown-toggle::after {
 
 .contact {
     padding: 60px 0;
-    background-color: white;
+    background: #f3f5fa;
 }
 
 .contact .contact-header {
@@ -1097,6 +1097,9 @@ a.dropdown-item.dropdown-toggle::after {
 
 /*end contact*/
 
+
+/*start footer*/
+
 .footer {
     padding: 30px 0;
     background-color: var(--secondColor);
@@ -1115,6 +1118,70 @@ a.dropdown-item.dropdown-toggle::after {
 .footer p.copy {
     font-size: 17px;
 }
+
+
+/*end footer*/
+
+
+/*start joinus*/
+
+.join-us {
+    padding: 50px 0;
+    text-align: center;
+    font-size: 15px;
+    color: #444444;
+}
+
+.join-us h4 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
+    color: #37517e;
+}
+
+.join-us form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0px 2px 15px #0d6efd;
+    text-align: left;
+}
+
+.join-us form input {
+    border: 0;
+    padding: 4px 8px;
+    width: calc(100% - 100px);
+}
+
+.join-us form input:focus {
+    border: none;
+    outline: none;
+}
+
+.join-us form button {
+    border: none;
+    font-size: 16px;
+    padding: 0 20px;
+    background: #47b2e4;
+    color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+}
+
+.join-us p {
+    margin-bottom: 0px;
+}
+
+
+/*end join us*/
 
 
 /*start media query*/
@@ -1245,6 +1312,12 @@ a.dropdown-item.dropdown-toggle::after {
     .pricing .plan-box {
         max-width: 100%;
         margin: 0 auto 30px auto;
+    }
+}
+
+@media screen and (max-width: 387px) {
+    .footer p.copy {
+        font-size: 15px;
     }
 }
 
