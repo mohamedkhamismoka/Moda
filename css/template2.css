@@ -1334,7 +1334,13 @@
             width: 80%;
             ;
         }
-        #hero .btn-get-started {
+        .landing .btns {
+            margin-top: 0px;
+        }
+        .landing .btns p {
+            font-size: 16px;
+        }
+        .landing .btns button {
             font-size: 16px;
             padding: 10px 24px 11px 24px;
         }
