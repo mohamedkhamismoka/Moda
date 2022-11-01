@@ -1334,6 +1334,10 @@
             width: 80%;
             ;
         }
+        #hero .btn-get-started {
+            font-size: 16px;
+            padding: 10px 24px 11px 24px;
+        }
     }
     
     @media (max-width: 420px) {
