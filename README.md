@@ -1,4 +1,4 @@
-# Poston team Website
+# Moda Website
 ![Design Preview](images/Capture.PNG)
 
 ## Welcome! 👋
@@ -25,4 +25,4 @@ This Website have a collection of sections
 -js
 
 ## Demo
-[Link](https://mohamedkhamismoka.github.io/ARSHA/)
+[Link](https://mohamedkhamismoka.github.io/Moda/)
